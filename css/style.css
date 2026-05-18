@@ -16,6 +16,7 @@ body{
     background: url(../img/fundo.jpg) no-repeat top center;
     background-size: cover;
     background-attachment: fixed;
+    overflow: hidden;
 }
 main{
     position: relative;
@@ -63,28 +64,24 @@ section#redes-sociais img:hover{
 section#redes-sociais>a:active>img{
     border-color: #fafafa;
     box-shadow: 0 0 10px #fafafa51;
+    opacity: 50%;
 }
 @media(max-width:450px) {
     section#redes-sociais{
-        display: inline;
-        top: 7%;
+        position: absolute;
+        display:flex;
+        top: 5%;
         transform: translate(-4%, -50%);
+        top: 5%;
+        left: 14%;
+        flex-wrap: nowrap;
+        
     }
     section#redes-sociais img{
         margin: 3px;
     }
     section#telefone{
-        top: 55%;
-    }
-}
-@media(max-width:314px){
-    section#telefone{
-        scale: 0.7;
-        transform: translate(-70%,-97%);
-    }
-    section#redes-sociais img{
-        width: 30px;
-        
+        top: 51%;
     }
 }
    
