@@ -45,6 +45,7 @@ section#redes-sociais {
     top: 50%;
     right: 0%;
     transform: translate(0%,-50%);
+    display: grid;
 }
 section#redes-sociais img{
     width: 50px;
@@ -62,4 +63,16 @@ section#redes-sociais img:hover{
 section#redes-sociais>a:active>img{
     border-color: #fafafa;
     box-shadow: 0 0 10px #fafafa51;
+}
+@media(max-width:450px) {
+    section#redes-sociais{
+        display: inline;
+        top: 7%;
+    }
+    section#redes-sociais img{
+        margin: 3px;
+    }
+    section#telefone{
+        top: 55%;
+    }
 }
