@@ -34,6 +34,7 @@ section#telefone{
     border-radius: 50px;
 }
 iframe#tela{
+    border: 0;
     position: absolute;
     top: 80px;
     left: 22px;
